@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+	</head>
+	<body>
+		<input type="text" id="num1"/>
+		<input type="text" id="num2"/>
+		<button onclick="add()">相加</button>
+		<div id="num3">
+		</div>
+		<script type="text/javascript">
+			function add(){
+				var input1 = document.getElementById("num1");
+				var input2 = document.getElementById("num2");
+				var num1 =Number(input1.value);
+				//console.log(num1);
+				var num2 =Number(input2.value);
+				//console.log(num2);
+				console.log(num1+num2);
+				var a = num1+num2;
+			   document.getElementById("num3").innerHTML="<input type='text' value="+a+">";
+			}
+		</script>
+		<input type="text" id="one" />
+		<input type="text" id="two" />
+		<button onclick="qiuji()">相乘</button> 
+		<div id="c"></div>
+		<script type="text/javascript">
+			function qiuji(){
+				var input1=document.getElementById("one");
+				var input2=document.getElementById("two");
+				var one=Number(input1.value);
+				var two=Number(input2.value);
+				console.log(one*two)
+				var b=one*two;
+				document.getElementById("c").innerHTML="<input type='text' value="+b+">"
+			}
+		</script>
+		<input type="text" id="a" />
+		<input type="text" id="b" />
+		<button onclick="zuocha()">相减</button> 
+		<div id="zc"></div>
+		<script type="text/javascript">
+			function zuocha(){
+				var input1=document.getElementById("a");
+				var input2=document.getElementById("b");
+				var a=Number(input1.value);
+				var b=Number(input2.value);
+				console.log(a-b)
+				var f=a-b;
+				document.getElementById("zc").innerHTML="<input type='text' value="+f+">"
+			}
+		</script>
+		<input type="text" id="aa" />
+		<input type="text" id="bb" />
+		<button onclick="zuoshang()">求商</button> 
+		<div id="zs"></div>
+		<script type="text/javascript">
+			function zuoshang(){
+				var input1=document.getElementById("aa");
+				var input2=document.getElementById("bb");
+				var aa=Number(input1.value);
+				var bb=Number(input2.value);
+				console.log(aa/bb)
+				var f=aa/bb;
+				console.log(f.toFixed(2))
+				document.getElementById("zs").innerHTML="<input type='text' value="+f.toFixed(2)+">"
+			}
+		</script>
+	</body>
+</html>

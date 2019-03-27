@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="a" />
+		<input type="text" id="b" />
+		<button onclick="zuoshang()">求商</button> 
+		<div id="zs"></div>
+		<script type="text/javascript">
+			function zuoshang(){
+				var input1=document.getElementById("a");
+				var input2=document.getElementById("b");
+				var a=Number(input1.value);
+				var b=Number(input2.value);
+				console.log(a/b)
+				var f=a/b;
+				console.log(f.toFixed(2))
+				document.getElementById("zs").innerHTML="<input type='text' value="+f.toFixed(2)+">"
+			}
+		</script>
+	</body>
+</html>
